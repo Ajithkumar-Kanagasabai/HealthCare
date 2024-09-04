@@ -1,5 +1,4 @@
 import { Avatar, Card, CardContent, Typography } from '@mui/material';
-import { pink } from '@mui/material/colors';
 import { Box } from '@mui/system';
 import React from 'react';
 import useAuth from '../../../../Hooks/useAuth';
@@ -21,7 +20,7 @@ const UserProfile = () => {
                 </Box>
             </Box>
             <Avatar
-                sx={{ mx: { xs: "auto", md: 1 }, border: 1, borderColor: '#f48fb1', boxShadow: 1, bgcolor: pink[500], width: 150, height: 150 }}
+                sx={{ mx: { xs: "auto", md: 1 }, border: 1, borderColor: '#c79164', boxShadow: 1, bgcolor: "#c79164", width: 150, height: 150 }}
                 alt={user.displayName}
                 src={user.photoURL}
             />

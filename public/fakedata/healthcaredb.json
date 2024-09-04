@@ -3,65 +3,174 @@
 		{
 			"id": 1,
 			"class": "",
-			"treatment": "Cardiology",
+			"treatment": "Private GP services",
 			"price": 15000,
-			"description": "Keeping your heart strong and healthy is crucial to your overall well-being. Our cardiology services are here to help you manage and treat your heart health no matter what you might need.",
+			"description": "Same day, 30 minute Doctor appointments. In our clinic or we will visit you at home, work or hotel.",
 			"icon": "https://i.ibb.co/DpVdYqQ/heart-2.png",
 			"service_img": "https://i.ibb.co/rG0TSwX/01.jpg"
 		},
 		{
 			"id": 2,
 			"class": "animation",
-			"treatment": "Neurology",
+			"treatment": "Out of Hours GP",
 			"price": 25000,
-			"description": "Neurology is the branch of medicine concerned with the study and treatment of disorders of the nervous system. The nervous system is a complex, sophisticated system that regulates and coordinates body activities. It has two major divisions: Central nervous system: the brain and spinal cord.",
+			"description": "The London General Practice operates a 24hr service with visiting doctors to your home, hotel or your work premises, any time day or night, weekdays, weekends, 365 days a year. If you want to see a Doctor in clinic Monday to Friday call us or send a message here. Our team will call you from 08:00 the next working day. We also offer phone and video consultations.",
 			"icon": "https://i.ibb.co/nzHc2t7/brain-2.png",
 			"service_img": "https://i.ibb.co/Bn2GG0N/06.jpg"
 		},
 		{
 			"id": 3,
 			"class": "",
-			"treatment": "Stomach",
+			"treatment": "Healthcare Screening",
 			"price": 3000,
-			"description": "What is the stomach? The stomach is a J-shaped organ that digests food. It produces enzymes (substances that create chemical reactions) and acids (digestive juices). This mix of enzymes and digestive juices breaks down food so it can pass to your small intestine. Your stomach is part of the gastrointestinal (GI) tract.",
+			"description": "At The London General Practice, we offer a wide range of screening and screening programmes for all patients. Screening can help to identify early signs of disease or other health issues, enabling early intervention and potentially improving the quality of life. The practice uses up to date evidence based pathways for all its screening programmes, and creates bespoke packages developed around an individual’s own health needs.",
 			"icon": "https://i.ibb.co/Ks1jsVf/stomach-2.png",
 			"service_img": "https://i.ibb.co/CK7Y2DD/03.jpg"
 		},
 		{
 			"id": 4,
 			"class": "",
-			"treatment": "Covid 19",
+			"treatment": "Women’s health services",
 			"price": 100,
-			"description": "Most people infected with the virus will experience mild to moderate respiratory illness and recover without requiring special treatment. However, some will become seriously ill and require medical attention. Older people and those with underlying medical conditions like cardiovascular disease, diabetes, chronic respiratory disease, or cancer are more likely to develop serious illness. Anyone can get sick with COVID-19 and become seriously ill or die at any age.",
+			"description": "At The London General Practice we understand the complexities of women’s health and are dedicated to providing individually tailored testing, treatment and advice for women of all ages, in an open, friendly and supportive environment.",
 			"icon": "https://i.ibb.co/NWKjgmj/virus-2.png",
 			"service_img": "https://i.ibb.co/3FS3B8h/08.jpg"
 		},
 		{
 			"id": 5,
 			"class": "animation",
-			"treatment": "Lungs",
+			"treatment": "Men’s health services",
 			"price": 9000,
-			"description": "The lungs are a pair of spongy, air-filled organs located on either side of the chest (thorax). The trachea (windpipe) conducts inhaled air into the lungs through its tubular branches, called bronchi. The bronchi then divide into smaller and smaller branches (bronchioles), finally becoming microscopic.",
+			"description": "At The London General Practice, our philosophy is to help all our patients to maintain their health and wellbeing through carefully targeted testing, treatment and advice, with flexible appointment availability to suit your busy schedule.",
 			"icon": "https://i.ibb.co/w0Mh2Jf/lungs.png",
 			"service_img": "https://i.ibb.co/q9SM3XT/10.jpg"
 		},
 		{
 			"id": 6,
 			"class": "",
-			"treatment": "Bronchus",
+			"treatment": "Cancer Screening",
 			"price": 1800,
-			"description": "(BRON-kus) A large airway that leads from the trachea (windpipe) to a lung. The plural of bronchus is bronchi. Enlarge. Anatomy of the respiratory system, showing the trachea and both lungs and their lobes and airways.",
+			"description": "At The London General Practice, we provide comprehensive cancer screening to help you identify problems early should you have any concerns.",
 			"icon": "https://i.ibb.co/yyPd0N8/bronchus.png",
 			"service_img": "https://i.ibb.co/dDsVnnZ/09.jpg"
 		},
 		{
 			"id": 7,
 			"class": "",
-			"treatment": "Vaccine",
+			"treatment": "TruCheck™ Early Cancer Screening Blood Test",
 			"price": 0,
-			"description": "Safe and effective vaccines are available that provide strong protection against serious illness, hospitalization and death from COVID-19. Billions of people have been vaccinated against COVID-19. Getting vaccinated is one of the most important things you can do to protect yourself against COVID-19, help end the pandemic and stop new variants emerging. Take all COVID-19 vaccine doses recommended to you by your health authority as soon as it is your turn, including a booster dose if recommended.",
+			"description": "When you detect cancer in its early stages, treatment is more effective and the chances of a positive outcome are significantly increased.",
 			"icon": "https://i.ibb.co/NWKjgmj/virus-2.png",
-			"service_img": "https://i.ibb.co/02FMz1F/02.jpg"
+			"service_img": "https://i.ibb.co/rG0TSwX/01.jpg"
+		},
+		{
+			"id": 8,
+			"class": "",
+			"treatment": "Consult for Global Health Concierge",
+			"price": 0,
+			"description": "LGP Concierge coordinates all your medical needs from your very first consultation and provides reassurance throughout your treatment.",
+			"icon": "https://i.ibb.co/NWKjgmj/virus-2.png",
+			"service_img": "https://i.ibb.co/Bn2GG0N/06.jpg"
+		},
+		{
+			"id": 9,
+			"class": "",
+			"treatment": "HEALTHY MIND HEALTHY BODY ASSESSMENT",
+			"price": 0,
+			"description": "Our combined Healthy Mind Healthy Body Assessment is specifically designed to consider both your general wellbeing, as well as a mind assessment focused on detecting early signs of cognitive impairment or memory issues.",
+			"icon": "https://i.ibb.co/NWKjgmj/virus-2.png",
+			"service_img": "https://i.ibb.co/CK7Y2DD/03.jpg"
+		},
+		{
+			"id": 10,
+			"class": "",
+			"treatment": "ASSESSMENT",
+			"price": 0,
+			"description": "Our combined Healthy Mind Healthy Body Assessment is specifically designed to consider both your general wellbeing, as well as a mind assessment focused on detecting early signs of cognitive impairment or memory issues.",
+			"icon": "https://i.ibb.co/NWKjgmj/virus-2.png",
+			"service_img": "https://i.ibb.co/3FS3B8h/08.jpg"
+		},
+		{
+			"id": 11,
+			"class": "",
+			"treatment": "Genetic Testing",
+			"price": 0,
+			"description": "The London General Practice works closely with our laboratory partners and Genetic Counsellors to provide state of the art genetic testing.",
+			"icon": "https://i.ibb.co/NWKjgmj/virus-2.png",
+			"service_img": "https://i.ibb.co/q9SM3XT/10.jpg"
+		},
+		{
+			"id": 12,
+			"class": "",
+			"treatment": "50+ wellness",
+			"price": 0,
+			"description": "As we get older, we all need to be a little more aware of our health. Although some of it is down to our genes, advancing age, exposure to environmental factors and the cumulative effects of our lifestyle choices are bound to have an impact on our wellbeing.",
+			"icon": "https://i.ibb.co/NWKjgmj/virus-2.png",
+			"service_img": "https://i.ibb.co/dDsVnnZ/09.jpg"
+		},
+		{
+			"id": 13,
+			"class": "",
+			"treatment": "Menopause Clinic",
+			"price": 0,
+			"description": "Are you suffering from hot flushes, brain fog, period irregularities? Are you thinking you could be suffering symptoms of the menopause or want to know more about your options? Despite affecting 50% of the population and over 80% of women experiencing common symptoms, support can be difficult to come by.",
+			"icon": "https://i.ibb.co/NWKjgmj/virus-2.png",
+			"service_img": "https://i.ibb.co/rG0TSwX/01.jpg"
+		},
+		{
+			"id": 14,
+			"class": "",
+			"treatment": "Occupational health",
+			"price": 0,
+			"description": "Our Corporate services cover occupational health, health screening services, and general staff health and wellbeing programs that delivers real benefits to companies and their employees.",
+			"icon": "https://i.ibb.co/NWKjgmj/virus-2.png",
+			"service_img": "https://i.ibb.co/Bn2GG0N/06.jpg"
+		},
+		{
+			"id": 15,
+			"class": "",
+			"treatment": "CAA aviation medicals",
+			"price": 0,
+			"description": "Led by Dr Sam Bennett, The London General Practice",
+			"icon": "https://i.ibb.co/NWKjgmj/virus-2.png",
+			"service_img": "https://i.ibb.co/CK7Y2DD/03.jpg"
+		},
+		{
+			"id": 16,
+			"class": "",
+			"treatment": "Wellbeing and health optimisation",
+			"price": 0,
+			"description": "Healthcare is much more than simply treating disease. At The London General Practice, we believe that maintaining optimal health and preventing disease are just as important to the physical and mental wellbeing of our patients.",
+			"icon": "https://i.ibb.co/NWKjgmj/virus-2.png",
+			"service_img": "https://i.ibb.co/3FS3B8h/08.jpg"
+		},
+		{
+			"id": 17,
+			"class": "",
+			"treatment": "Consult for Weight Loss Services",
+			"price": 0,
+			"description": "Wegovy (Semaglutide) is a weekly Semaglutide injection. It is clinically proven to be effective for weight loss. It does this by suppressing the appetite.",
+			"icon": "https://i.ibb.co/NWKjgmj/virus-2.png",
+			"service_img": "https://i.ibb.co/q9SM3XT/10.jpg"
+		},
+		{
+			"id": 18,
+			"class": "",
+			"treatment": "Consult for wellbeing services",
+			"price": 0,
+			"description": "Investing in proactive measures to keep your team healthy will always pay dividends for your business. A planned programme of corporate wellbeing has many benefits, from the financial benefits of a healthy workforce with low levels of sickness absence, to the productivity benefits that come when your team feels cared for and in control of their physical and mental health.",
+			"icon": "https://i.ibb.co/NWKjgmj/virus-2.png",
+			"service_img": "https://i.ibb.co/dDsVnnZ/09.jpg"
+		}
+		,
+		{
+			"id": 19,
+			"class": "",
+			"treatment": "MEDICAL Virtual CONSULTATIONs",
+			"price": 0,
+			"description": "Get speedy answers and peace of mind for your healthcare concerns using a Video or Telephone Consultation with one of our Doctors.",
+			"icon": "https://i.ibb.co/NWKjgmj/virus-2.png",
+			"service_img": "https://i.ibb.co/rG0TSwX/01.jpg"
 		}
 	]
 }

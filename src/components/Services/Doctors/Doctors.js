@@ -17,15 +17,15 @@ const Doctors = () => {
             content: "input",
         })
             .then((value) => {
-                swal(`You Appointment data is :➥ ${value} You will get a confirmation Email soon if the slot is free. We are trying to make it automated asap. Till then be patient`);
+                swal(`You Appointment data is : ${value}. You will get a confirmation Email soon if the slot is free. We are trying to make it automated asap. Till then be patient`);
             });
     }
     return (
         <div id='doctors'>
             {doctors[0].length > 1 ? <>
-                <Box sx={{ bgcolor: '#fce4ec', color: 'primary.main', p: 2, mb: 2, mt: 6, textAlign: "center" }}>
+                <Box sx={{ bgcolor: 'primary.main', color: 'secondary.main', p: 2, mb: 2, mt: 6, textAlign: "center" }}>
                     <Container maxWidth="xl">
-                        <Typography sx={{ mt: 2, mb: 2, fontWeight: 600 }}
+                        <Typography sx={{ mt: 2, mb: 2, fontWeight: "bold" }}
                             variant='h5'
                         >Our team always ready to assist you
                         </Typography>
@@ -33,12 +33,14 @@ const Doctors = () => {
                         <Grid container spacing={3}>
                             {
                                 doctors[0]?.map((doctor) => (
-                                    <Grid key={doctor.doc_id} item xs={12} sm={6} md={4} lg={3} sx={{ mx: 'auto' }}>
+                                    <Grid key={doctor.doc_id} item xs={12} sm={6} md={4} lg={4} sx={{ mx: 'auto' }}>
                                         <Card sx={{
                                             mx: 'auto',
                                             boxShadow: 10,
+                                            pt: 2,
+                                            mt:4,
                                             maxWidth: 345, transition: '0.5s all ease-in-out', ':hover': {
-                                                color: '#e91e63',
+                                                color: 'text.secondary',
                                                 boxShadow: 1
                                             }
                                             , 'img': { transition: '0.5s all ease-in-out' },
@@ -52,22 +54,22 @@ const Doctors = () => {
                                                     alt="doctor image"
                                                     src={doctor?.doc_img}
                                                     sx={{
-                                                        width: 256, height: 256, mx: 'auto'
+                                                        width: 256, height: 256, mx: 'auto',
                                                     }}
                                                 />
 
                                                 <CardContent sx={{ display: 'flex', mx: 'auto', my: 2 }}>
 
-                                                    <Typography gutterBottom variant="h5" component="div">
+                                                    <Typography gutterBottom variant="h5" component="div" sx={{color:"secondary.main"}}>
                                                         Specialist in {doctor.specialize}
                                                     </Typography>
                                                 </CardContent>
-                                                <Typography gutterBottom variant="h6" component="div">
+                                                <Typography gutterBottom variant="h6" component="div" sx={{fontWeight:"bold"}}>
                                                     Dr. {doctor.name}
                                                 </Typography>
                                             </CardActionArea>
-                                            <CardActions sx={{ textAlign: "center" }}>
-                                                <Button onClick={swalAlert} sx={{ mt: 2, mb: 1 }} variant="contained" className="CheckButton">
+                                            <CardActions sx={{ textAlign: "center", justifyContent: "center" }}>
+                                                <Button onClick={swalAlert} sx={{bgcolor:"secondary.main", color:'white', mt: 2, mb: 1 }} variant="contained" className="CheckButton">
                                                     Make an Appointment
                                                     <AddCircleIcon />
                                                 </Button>
@@ -83,7 +85,7 @@ const Doctors = () => {
 
                         </Grid>
 
-                        <HashLink smooth to="/home#home" className='text-style'> <Button variant="contained" startIcon={<HomeIcon />} sx={{ mb: 5, mt: 5 }}>
+                        <HashLink smooth to="/home#home" className='text-style'> <Button variant="contained" startIcon={<HomeIcon />} sx={{bgcolor:"text.secondary", color:"white", mb: 5, mt: 5 }}>
                             Back to Home
                         </Button></HashLink>
 

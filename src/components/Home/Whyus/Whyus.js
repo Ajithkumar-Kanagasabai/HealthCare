@@ -25,14 +25,14 @@ const Whyus = () => {
     return (
 
 
-        <Box sx={{ bgcolor: '#fce4ec', color: 'primary.main', p: 2, mb: 2, textAlign: "center" }}>
+        <Box sx={{ bgcolor: '#eff0f0', color: 'secondary.main', p: 2, mb: 2, textAlign: "center" }}>
             <Container maxWidth="xl">
-                <Typography sx={{ mt: 2, mb: 2, fontWeight: 600 }}
+                <Typography sx={{ mt: 2, mb: 2, fontWeight: "bold" }}
                     variant='h6'
                 >Why Choose Our Medical
                 </Typography>
 
-                <Typography sx={{ mb: 8, fontWeight: 600 }}
+                <Typography sx={{ mb: 8, fontWeight: "bold" }}
                     variant='h5'
                 >Breakthrough in Comprehensive, Flexible Care Delivery Models
                 </Typography>
@@ -42,12 +42,12 @@ const Whyus = () => {
 
                         {
                             ourServices?.map((service) => (
-                                <Grid key={service.id} className={service.class} item xs={12} md={6} lg={4}>
+                                <Grid key={service.id} className={service.class} item xs={12} sm={6} md={4} lg={4}>
 
                                     <Card sx={{
                                         maxWidth: 345, transition: '0.5s all ease-in-out', mb: 2, ':hover': {
                                             boxShadow: 10,
-                                            color: '#e91e63'
+                                            color: 'black'
                                         }
                                         , 'img': { transition: '0.5s all ease-in-out' },
                                         ':hover img': {
@@ -61,26 +61,20 @@ const Whyus = () => {
                                                 image={service?.service_img}
                                                 alt="card image of service"
                                             />
-                                            <CardContent sx={{ display: 'flex', mx: 'auto', my: 2 }}>
-                                                <Avatar
-                                                    alt="service icon"
-                                                    src={service?.icon}
-                                                    sx={{
-                                                        width: 40, height: 40, mx: 'auto'
-                                                    }}
-                                                />
-                                                <Typography gutterBottom variant="h5" component="div">
-                                                    Consult for {service.treatment}
-                                                </Typography>
-                                            </CardContent>
+                                            <CardContent sx={{color:'text.main', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                                        <Typography variant="h5" component="div" sx={{mt: 2, fontWeight:"bold"}}>
+                                            {service.treatment}
+                                        </Typography>
+                                    </CardContent>
                                         </CardActionArea>
-                                        <CardActions>
-                                            <Typography sx={{ mx: 2, p: 2, textAlign: "end" }} >
-                                                <Link className='text-style' to="/services" color="primary">
-                                                    See More Details...
-                                                </Link>
-                                            </Typography>
-                                        </CardActions>
+                                        <CardActions sx={{ justifyContent: 'center', display: 'flex' }}>
+                                    <Typography sx={{ mb: 4, textAlign: 'center' }}>
+                                        <Link className='text-style' to="/services">
+                                            See More Details...
+                                        </Link>
+                                    </Typography>
+                                </CardActions>
+
                                     </Card>
 
 

@@ -15,7 +15,7 @@ const About = () => {
                     All-in-One Website Health Solution
                 </Typography>
 
-                <Typography sx={{ color: 'primary.main', my:2, textAlign: "center", fontWeight:'bold' }}
+                <Typography sx={{ color: 'secondary.main', my:2, textAlign: "center", fontWeight:'bold' }}
                     variant='h4'>
                     ABOUT THE LONDON GENERAL PRACTICE
                 </Typography>
@@ -30,8 +30,14 @@ const About = () => {
                 variant='body1'
                 >The London General Practice is a renowned private medical practice based on Harley Street in London.
                     <br /><br />
+                    Our highly qualified, experienced practitioners offer discreet care to some of the world’s most discerning individuals and families.
+                    <br /><br />
                         Established in 2005, the practice operates out of state of the art consulting and treatment rooms in the heart of the Harley Street medical district. Since April 2022 the practice is very pleased to be operating as a part of HCA International. <br /><br />
-                    The practice has a total of more than 30 staff, including 11 Doctors and two nurses, plus a 24/7 on-call team.
+                    The practice has a total of more than 30 staff, including 11 Doctors and two nurses, plus a 24/7 on-call team.<br /><br />
+
+                    <a className='text-style' href="tel:+44 (0)207 935 1000">
+                                Contact Us for more details : +44 (0)207 935 1000
+                                </a>
                     </Typography>
             </Container>
         </Box>

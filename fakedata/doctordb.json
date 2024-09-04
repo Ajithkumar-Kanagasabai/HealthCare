@@ -2,57 +2,63 @@
     "docs": [
         {
             "doc_id": 1,
-            "name": "Lee S. Williamson",
-            "specialize": "Cardiology",
-            "doc_img": "https://i.ibb.co/b6SDFTN/01.jpg"
+            "name": "Dr Paul Ettlinger, GP",
+            "specialize": "Obstetrics and Gynaecology and in Occupational Health",
+            "doc_img": "https://www.thelondongeneralpractice.com/wp-content/uploads/2022/08/Dr_Paul3-PD.jpg"
         },
         {
             "doc_id": 2,
-            "name": "Greg S. Grinstead",
-            "specialize": "Neurology",
-            "doc_img": "https://i.ibb.co/gW26qY2/02.jpg"
+            "name": "Dr Stuart Sanders, GP",
+            "specialize": "paediatrics",
+            "doc_img": "https://www.thelondongeneralpractice.com/wp-content/uploads/2017/11/Dr-Stuart-Sanders.jpg"
         },
         {
             "doc_id": 3,
-            "name": "Roger K. Jackson",
-            "specialize": "Orthopedics",
-            "doc_img": "https://i.ibb.co/hsyxYVj/03.jpg"
+            "name": "Dr Catrin Bevan, GP",
+            "specialize": "General medicine",
+            "doc_img": "https://www.thelondongeneralpractice.com/wp-content/uploads/2022/08/Dr_Catrin-PD-copy.jpg"
         },
         {
             "doc_id": 4,
-            "name": "Frank T. Grimsley",
-            "specialize": "Neurology",
-            "doc_img": "https://i.ibb.co/86xBJSh/04.jpg"
+            "name": "Dr Sam Bennett, GP",
+            "specialize": "Orthopaedics",
+            "doc_img": "https://www.thelondongeneralpractice.com/wp-content/uploads/2023/11/Dr-Bennett-private-harley-street-gp-2.jpg"
         },
         {
             "doc_id": 5,
-            "name": "Rudolph V. Spitler",
-            "specialize": "Cardiology",
-            "doc_img": "https://i.ibb.co/hWD7NVx/05.jpg"
+            "name": "Dr Angela Rai, GP",
+            "specialize": "Paediatrics and Occupational Medicine",
+            "doc_img": "https://www.thelondongeneralpractice.com/wp-content/uploads/2022/08/Dr_Angela2-PD2.jpg"
         },
         {
             "doc_id": 6,
-            "name": "Erik R. Faulkner",
-            "specialize": "Cardiology",
-            "doc_img": "https://i.ibb.co/hYWtLy1/06.jpg"
+            "name": "Dr Sanjay Mehta, GP",
+            "specialize": "psychiatric and surgical specialties",
+            "doc_img": "https://www.thelondongeneralpractice.com/wp-content/uploads/2019/03/Dr-Sanjay-Mehta.jpg"
         },
         {
             "doc_id": 7,
-            "name": "Phillip L. Williams",
-            "specialize": "Neurology",
-            "doc_img": "https://i.ibb.co/dPtTnys/07.jpg"
+            "name": "Dr Elise Dallas",
+            "specialize": "General Practitioner",
+            "doc_img": "https://www.thelondongeneralpractice.com/wp-content/uploads/2023/06/elise-dallas-womens-GP-harley-street.jpg"
         },
         {
             "doc_id": 8,
-            "name": "Johnny R. Atterberry",
-            "specialize": "Orthopedics",
-            "doc_img": "https://i.ibb.co/ypmBR9k/08.jpg"
+            "name": "Dr Katy Kasraie",
+            "specialize": "General Practitioner and Aesthetic",
+            "doc_img": "https://www.thelondongeneralpractice.com/wp-content/uploads/2023/06/Dr_-Katy-Kasraie-private-harley-street-gp.jpg"
         },
         {
             "doc_id": 9,
-            "name": "Michael I. Johnson",
-            "specialize": "Medecine",
-            "doc_img": "https://i.ibb.co/nj8qcCS/09.jpg"
+            "name": "Dr Natalia Bogatcheva, GP",
+            "specialize": "General Practitioner",
+            "doc_img": "https://www.thelondongeneralpractice.com/wp-content/uploads/2023/03/Dr-Natalia-Bogatcheva-private-GP-Harley-Street.jpg"
+        },
+        {
+            "doc_id": 10,
+            "name": "Dr Katharina Lederle",
+            "specialize": "Sleep and Circadian Rhythm",
+            "doc_img": "https://www.thelondongeneralpractice.com/wp-content/uploads/2024/04/Dr-Kat-Lederle-1.jpg"
         }
     ]
 }

@@ -23,10 +23,10 @@ import PrivetRoute from './PrivetRoute/PrivetRoute';
 export const myTheme = createTheme({
   palette: {
     primary: {
-      main: '#e91e63',
+      main: '#eff0f0',
     },
     secondary: {
-      main: '#f48fb1',
+      main: '#c79164',
     },
     alternate: {
       main: '#fff',

@@ -4,7 +4,7 @@ import './LoadingScreen.css'
 
 const LoadingScreen = () => {
     return (
-        <Box sx={{
+        <Box sx={{color:"secondary.main",
             display: 'flex',
             flexDirection: 'column',
             minHeight: '100vh',

@@ -2,13 +2,11 @@ import React from 'react';
 import { Avatar, Box, Chip, colors, Container, Divider, Grid, Stack, styled, Typography } from '@mui/material';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import EmailIcon from '@mui/icons-material/Email';
-import HealingTwoToneIcon from '@mui/icons-material/HealingTwoTone';
 import CallIcon from '@mui/icons-material/Call';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import './Footer.css';
-import { pink } from '@mui/material/colors';
 import { HashLink } from 'react-router-hash-link';
 
 
@@ -35,7 +33,7 @@ function Copyright(props) {
 const Footer = () => {
     return (
         <footer>
-            <Box className='sticky-container' sx={{ bgcolor: 'secondary.main', color: 'text.secondary', pb: 2, top: 'auto' }}>
+            <Box className='sticky-container' sx={{ bgcolor: 'primary.main', color: 'text.secondary', pb: 2, top: 'auto' }}>
                 <Container maxWidth="xl">
                     <Grid container
                         spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
@@ -47,7 +45,7 @@ const Footer = () => {
                                     direction="row"
                                     justifyContent="flex-start"
                                     alignItems="center"
-                                    sx={{ mr: 2, display: { xs: 'flex', md: 'flex' } }}
+                                    sx={{ mr: 2, mb:2, display: { xs: 'flex', md: 'flex' }, color:'text.secondary', fontWeight:'bold' }}
                                 > 
                                 {/* <Avatar sx={{ mt: 1, mb: 1, mr: 1, bgcolor: 'white' }}>
                                         <HealingTwoToneIcon
@@ -63,16 +61,15 @@ const Footer = () => {
                                 justifyContent="flex-start"
                                 alignItems="center"
                                 spacing={1} >
-                                <Avatar sx={{ mt: 1, bgcolor: pink[500] }}>
+                                <Avatar sx={{ mt: 1, bgcolor: 'secondary.main', color:'white' }}>
                                     <LocationOnIcon />
                                 </Avatar>
                                 <Typography
                                 sx={{
                                     color: 'black',
-                                    '&:hover': {
-                                    color: 'pink !important',
+                                    
                                     cursor: 'pointer',
-                                    },
+                                    
                                 }}
                                 >
                                 114a Harley Street London W1G 7JL
@@ -84,7 +81,7 @@ const Footer = () => {
                                 justifyContent="flex-start"
                                 alignItems="center"
                                 spacing={1} >
-                                <Avatar sx={{ mb: 1, mt: 1, bgcolor: pink[500] }}>
+                                <Avatar sx={{ mb: 1, mt: 1, bgcolor: 'secondary.main', color:'white'  }}>
                                     <EmailIcon />
                                 </Avatar>
                                 <a className='text-style' href="mailto:info@thelondongeneralpractice.com">
@@ -96,7 +93,7 @@ const Footer = () => {
                                 justifyContent="flex-start"
                                 alignItems="center"
                                 spacing={1} >
-                                <Avatar sx={{ mb: 1, bgcolor: pink[500] }}>
+                                <Avatar sx={{ mb: 1, bgcolor: 'secondary.main', color:'white'  }}>
                                     <CallIcon />
                                 </Avatar>
                                 <a className='text-style' href="tel:+44 (0)207 935 1000">
@@ -111,7 +108,7 @@ const Footer = () => {
                         <Grid item xs={12} sm={4}>
                             <Root>
                                 <Divider>
-                                    <Chip label="Our Services" />
+                                    <Chip sx={{bgcolor:'secondary.main', color:'white', fontWeight:'bold'}} label="Our Services" />
                                 </Divider>
                             </Root>
 
@@ -129,7 +126,7 @@ const Footer = () => {
                         <Grid item xs={12} sm={4}>
                             <Root>
                                 <Divider>
-                                    <Chip label="Find us on social media" />
+                                    <Chip sx={{bgcolor:'secondary.main', color:'white', fontWeight:'bold'}}  label="Find us on social media" />
                                 </Divider>
                             </Root>
 
@@ -137,7 +134,7 @@ const Footer = () => {
                                 justifyContent="flex-start"
                                 alignItems="center"
                                 spacing={1} >
-                                <Avatar sx={{ mb: 1, mt: 1, bgcolor: pink[500] }}>
+                                <Avatar sx={{ mb: 1, mt: 1, bgcolor: 'secondary.main', color:'white'  }}>
                                     <FacebookIcon />
                                 </Avatar>
                                 <a className='text-style' href="https://www.facebook.com/Londongeneralpractice/" target="_blank" rel="noopener noreferrer" >
@@ -149,7 +146,7 @@ const Footer = () => {
                                 justifyContent="flex-start"
                                 alignItems="center"
                                 spacing={1} >
-                                <Avatar sx={{ mb: 1, bgcolor: pink[500] }}>
+                                <Avatar sx={{ mb: 1, bgcolor: 'secondary.main', color:'white'  }}>
                                     <YouTubeIcon />
                                 </Avatar>
                                 <a className='text-style' href="https://www.youtube.com/channel/UCXwDGzrTlOMuEd7H-y513Mg/videos" target="_blank" rel="noopener noreferrer" >
@@ -161,7 +158,7 @@ const Footer = () => {
                                 justifyContent="flex-start"
                                 alignItems="center"
                                 spacing={1} >
-                                <Avatar sx={{ mb: 1, bgcolor: pink[500] }}>
+                                <Avatar sx={{ mb: 1, bgcolor: 'secondary.main', color:'white'  }}>
                                     <TwitterIcon />
                                 </Avatar>
                                 <a className='text-style' href="https://x.com/i/flow/login?redirect_after_login=%2Ftlgp_doc" target="_blank" rel="noopener noreferrer" >

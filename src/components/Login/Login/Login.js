@@ -85,7 +85,7 @@ const Login = () => {
                                     alignItems: 'center'
                                 }}
                             >
-                                <Avatar sx={{ m: 1, bgcolor: 'primary.main' }}>
+                                <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
                                     <LoginIcon />
                                 </Avatar>
                                 <Typography component="h1" variant="h5">
@@ -131,7 +131,7 @@ const Login = () => {
                                         onClick={handleRegister}
                                         fullWidth
                                         variant="contained"
-                                        sx={{ mt: 3, mb: 2 }}
+                                        sx={{bgcolor:"secondary.main", color:"white", mt: 3, mb: 2 }}
                                     >
                                         <Fingerprint /> Login
                                     </Button>

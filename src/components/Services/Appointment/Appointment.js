@@ -54,15 +54,16 @@ const Appointment = () => {
                         <MenuItem value="">
                             <em>None</em>
                         </MenuItem>
-                        <MenuItem value={10}>Lee S. Williamson</MenuItem>
-                        <MenuItem value={11}>Greg S. Grinstead</MenuItem>
-                        <MenuItem value={12}>Roger K. Jackson</MenuItem>
-                        <MenuItem value={13}>Frank T. Grimsley</MenuItem>
-                        <MenuItem value={14}>Rudolph V. Spitler</MenuItem>
-                        <MenuItem value={16}>Erik R. Faulkner</MenuItem>
-                        <MenuItem value={17}>Phillip L. Williams</MenuItem>
-                        <MenuItem value={18}>Johnny R. Atterberry</MenuItem>
-                        <MenuItem value={19}>Michael I. Johnson</MenuItem>
+                        <MenuItem value={10}>Dr Paul Ettlinger, GP</MenuItem>
+                        <MenuItem value={11}>Dr Stuart Sanders, GP</MenuItem>
+                        <MenuItem value={12}>Dr Catrin Bevan, GP</MenuItem>
+                        <MenuItem value={13}>Dr Sam Bennett, GP</MenuItem>
+                        <MenuItem value={14}>Dr Angela Rai, GP</MenuItem>
+                        <MenuItem value={16}>Dr Sanjay Mehta, GP</MenuItem>
+                        <MenuItem value={17}>Dr Elise Dallas</MenuItem>
+                        <MenuItem value={18}>Dr Katy Kasraie</MenuItem>
+                        <MenuItem value={19}>Dr Natalia Bogatcheva, GP</MenuItem>
+                        <MenuItem value={20}>Dr Katharina Lederle</MenuItem>
                     </Select>
                 </FormControl>
                 <TextField sx={{ mb: 2 }} value={user.displayName} fullWidth label="Your Name" id="fullWidth" />
@@ -87,7 +88,7 @@ const Appointment = () => {
 
                 <TextField sx={{ mt: 2, mb: 2 }} fullWidth label="Problem type" id="fullWidth" />
 
-                <Button sx={{ p: 1, mt: 2, mb: 5 }} onClick={swalAlert} fullWidth
+                <Button sx={{ bgcolor:"secondary.main", color:"white", p: 1, mt: 2, mb: 5 }} onClick={swalAlert} fullWidth
                     variant="contained"><AddCircleIcon /> Confirm</Button>
             </Container>
         </Box>

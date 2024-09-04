@@ -46,12 +46,17 @@ const Navbar = () => {
             history.push("/profile");
         }
     };
+    const handleLogoClick = () => {
+        history.push("/home");
+    };
+    
     return (
         <Box sx={{ mt: 8 }} >
             <AppBar position="fixed" color="primary" sx={{ top: 0, bottom: 'auto' }} >
                 <Container maxWidth="xl">
                     <Toolbar disableGutters>
-                    <img src={Logo} alt='logo' style={{ height: '69px', maxWidth: '100%' }} />
+                    <img src={Logo} alt='logo' style={{ height: '69px', maxWidth: '100%', cursor: 'pointer' }} 
+                            onClick={handleLogoClick} />
                     {/* <Typography
                             variant="h6"
                             noWrap
@@ -144,12 +149,11 @@ const Navbar = () => {
                             variant="h6"
                             align='center'
                             component="div"
-                            sx={{ flexGrow: 1, pt: 2, display: { xs: 'flex', md: 'none' } }}
+                            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'flex', md: 'none', } }}
                         >
-                            <HealingTwoToneIcon
-                                fontSize='large' />   The London General Practice
+                            The London General Practice
                         </Typography>
-                        <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+                        <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }}}>
 
                             {/*-------- large skin navigation-------- */}
 
@@ -158,7 +162,7 @@ const Navbar = () => {
                                 smooth to='/home#home'>
                                 <Button
 
-                                    sx={{ my: 2, color: 'white', display: 'block' }}
+                                    sx={{ my: 2, color: 'black', display: 'block' }}
                                 >Home
                                 </Button></HashLink>
 
@@ -167,7 +171,7 @@ const Navbar = () => {
                                 smooth to='/services#services'>
                                 <Button
 
-                                    sx={{ my: 2, color: 'white', display: 'block' }}
+                                    sx={{ my: 2, color: 'black', display: 'block' }}
                                 >Services
                                 </Button></HashLink>
 
@@ -176,7 +180,7 @@ const Navbar = () => {
                                 smooth to='/doctors#doctors'>
                                 <Button
 
-                                    sx={{ my: 2, color: 'white', display: 'block' }}
+                                    sx={{ my: 2, color: 'black', display: 'block' }}
                                 >Doctors
                                 </Button></HashLink>
 
@@ -185,7 +189,7 @@ const Navbar = () => {
                                 smooth to='/appointment#appointment'>
                                 <Button
 
-                                    sx={{ my: 2, color: 'white', display: 'block' }}
+                                    sx={{ my: 2, color: 'black', display: 'block' }}
                                 >Appointment
                                 </Button></HashLink>
 
@@ -194,7 +198,7 @@ const Navbar = () => {
                                 smooth to='/about#about'>
                                 <Button
 
-                                    sx={{ my: 2, color: 'white', display: 'block' }}
+                                    sx={{ my: 2, color: 'black', display: 'block' }}
                                 >About
                                 </Button></HashLink>
                             {!user?.email &&
@@ -203,7 +207,7 @@ const Navbar = () => {
                                     smooth to='/login#login'>
                                     <Button
 
-                                        sx={{ my: 2, color: 'white', display: 'block' }}
+                                        sx={{ my: 2, color: 'black', display: 'block' }}
                                     >Login
                                     </Button></HashLink>
                             }
@@ -235,7 +239,7 @@ const Navbar = () => {
                                     }}
                                     open={Boolean(anchorElUser)}
                                     onClose={handleCloseUserMenu}
-                                >  <Typography sx={{ p: '5px' }} color="primary" textAlign="center">Hi, {displayName}</Typography>
+                                >  <Typography sx={{ p: '5px' }} color="secondary" textAlign="center">Hi, {displayName}</Typography>
                                     <Divider />
                                     {settings.map((setting) => (
                                         <MenuItem key={setting} onClick={handleCloseUserMenu}>

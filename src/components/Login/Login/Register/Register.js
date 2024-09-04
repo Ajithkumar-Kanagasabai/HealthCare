@@ -39,7 +39,7 @@ const Register = () => {
                             alignItems: 'center',
                         }}
                     >
-                        <Avatar sx={{ m: 1, bgcolor: 'primary.main' }}>
+                        <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
                             <LockOutlinedIcon />
                         </Avatar>
                         <Typography component="h1" variant="h5">
@@ -112,7 +112,7 @@ const Register = () => {
                                     </Typography>
 
                                     <FormControlLabel
-                                        control={<Checkbox value="allowExtraEmails" color="primary" />}
+                                        control={<Checkbox value="allowExtraEmails" color="secondary" />}
                                         label="I want to receive inspiration, marketing promotions and updates via email."
                                     />
 
@@ -122,7 +122,7 @@ const Register = () => {
                                 type="submit"
                                 fullWidth
                                 variant="contained"
-                                sx={{ mt: 3, mb: 2 }}
+                                sx={{bgcolor:"secondary.main", color:"white", mt: 3, mb: 2 }}
                             >
                                 Register
                             </Button>

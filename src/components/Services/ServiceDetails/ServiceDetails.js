@@ -25,7 +25,7 @@ const ServiceDetails = () => {
     }, [services]);
 
     return (
-        <Box sx={{ bgcolor: '#fce4ec', color: 'primary.main', p: 2, mb: 2, textAlign: "center" }}>
+        <Box sx={{ bgcolor: 'primary.main', color: 'secondary.main', p: 2, mb: 2, textAlign: "center" }}>
             <Container maxWidth="xl">
                 <Typography sx={{ mt: 2, mb: 2, fontWeight: 600 }}
                     variant='h6'
@@ -61,18 +61,9 @@ const ServiceDetails = () => {
                                             image={service?.service_img}
                                             alt="card image of service"
                                         />
-                                        <CardContent sx={{ display: 'flex' }}>
-                                            <Avatar
-                                                width='50px'
-                                                hight='50px'
-                                                alt="service icon"
-                                                src={service?.icon}
-                                                sx={{
-                                                    width: 40, height: 40
-                                                }}
-                                            />
+                                        <CardContent sx={{ mt:2, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                             <Typography variant="h5" component="div">
-                                                Consult for {service.treatment}
+                                                {service.treatment}
                                             </Typography>
                                         </CardContent>
                                     </CardActionArea>
@@ -82,11 +73,11 @@ const ServiceDetails = () => {
                                             {service.description}
                                         </Typography>
                                     </CardActions>
-                                    <Typography gutterBottom variant="h6" component="div">
+                                    {/* <Typography gutterBottom variant="h6" component="div">
                                         Consult fee {service.price}
-                                    </Typography>
+                                    </Typography> */}
                                     <HashLink smooth to="/appointment" className='text-style'>
-                                        <Button sx={{ mt: 2, mb: 2 }} variant="contained" className="CheckButton">
+                                        <Button sx={{bgcolor:"secondary.main", color:'white', mt: 2, mb: 6 }} variant="contained" className="CheckButton">
                                             Make an Appointment
                                             <AddCircleIcon />
                                         </Button>
@@ -96,7 +87,7 @@ const ServiceDetails = () => {
                         }
                     </Grid>}
 
-                <HashLink smooth to="/home#home" className='text-style'> <Button variant="contained" color="primary" startIcon={<HomeIcon />} sx={{ mb: 5, mt: 5 }}>
+                <HashLink smooth to="/home#home" className='text-style'> <Button variant="contained" color="primary" startIcon={<HomeIcon />} sx={{bgcolor:"text.secondary", color:'white', mb: 5, mt: 5 }}>
                     Back to Home
                 </Button></HashLink>
 

@@ -21,7 +21,7 @@ const OurExperts = () => {
     }, [experts]);
 
     return (
-        <Box sx={{ bgcolor: '#fce4ec', color: 'primary.main', p: 2, mb: 2, textAlign: "center" }}>
+        <Box sx={{ bgcolor: 'primary.main', color: 'secondary.main', p: 2, mb: 2, textAlign: "center" }}>
             <Container maxWidth="xl">
                 <Typography sx={{ mt: 2, mb: 2, fontWeight: 600 }}
                     variant='h6'
@@ -42,8 +42,9 @@ const OurExperts = () => {
                                     <Card sx={{
                                         mx: 'auto',
                                         boxShadow: 10,
+                                        py: 4,
                                         maxWidth: 345, transition: '0.5s all ease-in-out', ':hover': {
-                                            color: '#e91e63',
+                                            color: 'text.secondary',
                                             boxShadow: 1
                                         }
                                         , 'img': { transition: '0.5s all ease-in-out' },
@@ -67,7 +68,7 @@ const OurExperts = () => {
                                                     Specialist in {experts.specialize}
                                                 </Typography>
                                             </CardContent>
-                                            <Typography gutterBottom variant="h6" component="div">
+                                            <Typography gutterBottom variant="h6" component="div" sx={{ color: 'secondary.main', fontWeight:"bold"}}>
                                                 Dr. {experts.name}
                                             </Typography>
                                         </CardActionArea>
@@ -81,8 +82,8 @@ const OurExperts = () => {
                     </Grid>
                 }
 
-                <Typography sx={{ mx: 2, p: 2, textAlign: "end" }} >
-                    <HashLink smooth to="/doctors#doctors" className='text-style' color="primary"> Meet Our Expert Team </HashLink>
+                <Typography sx={{ mx: 2, mt:2, p: 2, textAlign: "end" }}>
+                    <HashLink smooth to="/doctors#doctors" className='text-style'> Meet Our Expert Team </HashLink>
                 </Typography>
 
 

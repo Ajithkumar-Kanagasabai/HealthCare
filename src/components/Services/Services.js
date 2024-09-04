@@ -20,11 +20,11 @@ const Services = () => {
         <Box id='services' sx={{
             display: 'flex',
             flexDirection: 'column',
-            minHeight: '100vh', bgcolor: '#fce4ec', color: 'primary.main', p: 2, mb: 2, mt: 6, textAlign: "center"
+            minHeight: '100vh', bgcolor: 'primary.main', color: 'secondary.main', p: 2, mb: 2, mt: 6, textAlign: "center"
         }}>
             {services[0].length > 1 ?
                 <Container maxWidth="xl">
-                    <Typography sx={{ mt: 2, mb: 2, fontWeight: 600 }}
+                    <Typography sx={{ mt: 2, mb: 2, fontWeight: "bold" }}
                         variant='h6'
                     >Our Services
                     </Typography>
@@ -35,9 +35,10 @@ const Services = () => {
                                 <Grid key={service.id} item xs={12} sm={6} md={6} lg={4}>
                                     <Card sx={{
                                         mx: 'auto',
+                                        my:2,
                                         maxWidth: 345, transition: '0.5s all ease-in-out', ':hover': {
                                             boxShadow: 10,
-                                            color: '#e91e63'
+                                            color: 'text.secondary'
                                         }
                                         , 'img': { transition: '0.5s all ease-in-out' },
                                         ':hover img': {
@@ -51,28 +52,29 @@ const Services = () => {
                                                 image={service?.service_img}
                                                 alt="card image of service"
                                             />
-                                            <CardContent sx={{ display: 'flex', flexWrap: 'wrap', mx: 'auto', my: 2 }}>
-                                                <CardMedia
-                                                    component="img"
-                                                    sx={{ width: 40, mr: 1, mx: 'auto' }}
-                                                    image={service?.icon}
-                                                    alt="service icon"
-                                                />
-                                                <Typography gutterBottom variant="h5" component="div">
-                                                    Consult for {service.treatment}
+                                            <CardContent sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                                                <Typography variant="h5" component="div">
+                                                    {service.treatment}
                                                 </Typography>
                                             </CardContent>
+
                                         </CardActionArea>
 
                                         <CardActions>
 
-                                            <Typography sx={{ mx: 2, p: 2, textAlign: "end" }} >
-                                                <Button
-                                                    onClick={() => { ServiceDetails(service.id) }}
-                                                    variant="contained" color="primary" startIcon={<ReadMoreIcon />}>
-                                                    See More Details...
-                                                </Button>
-                                            </Typography>
+                                        <Box sx={{ display: 'flex', justifyContent: 'center', width: '100%', p: 2 }}>
+                                        <Typography>
+                                            <Button
+                                                onClick={() => { ServiceDetails(service.id) }}
+                                                variant="contained"
+                                                sx={{ bgcolor:"secondary.main", color:"white"}}
+                                                startIcon={<ReadMoreIcon />}
+                                            >
+                                                See More Details...
+                                            </Button>
+                                        </Typography>
+                                    </Box>
+
 
                                         </CardActions>
                                     </Card>
