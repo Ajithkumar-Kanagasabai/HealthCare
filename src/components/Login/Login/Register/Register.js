@@ -136,29 +136,29 @@ const Register = () => {
 
                                 </Grid>
                             </Grid>
-                            <Grid container sx={{ mt: 2, mb: 3 }} justifyContent="flex-end">
-                                <Grid item>
+                            {/* <Grid container sx={{ mt: 2, mb: 3 }} justifyContent="flex-end"> */}
+                                {/* <Grid item>
                                     <GoogleButton className='google-btn'
                                         type="dark" // can be light or dark
                                         onClick={singInUsingGoogle}
                                     />
-                                </Grid>
-                            </Grid>
-                            <Grid container sx={{ mb: 3 }} justifyContent="flex-end">
+                                </Grid> */}
+                            {/* </Grid> */}
+                            {/* <Grid container sx={{ mb: 3 }} justifyContent="flex-end"> */}
                                 {/* Facebook btn */}
-                                <Grid item>
+                                {/* <Grid item>
                                     <Button onClick={singInUsingFacebook} variant="contained"
                                         sx={{ p: 1, bgcolor: '#4267B2' }}>
                                         <FacebookIcon />Facebook</Button>
-                                </Grid>
-                                <Typography textAlign="center" sx={{ p: 2 }}>Or</Typography>
+                                </Grid> */}
+                                {/* <Typography textAlign="center" sx={{ p: 2 }}>Or</Typography> */}
                                 {/* GitHUB btn */}
-                                <Grid item>
-                                    <Button onClick={singInUsingGithub} variant="contained"
+                                {/* <Grid item> */}
+                                    {/* <Button onClick={singInUsingGithub} variant="contained"
                                         sx={{ p: 1, mb: 2, bgcolor: '#171515' }}>
-                                        <GitHubIcon /> GitHub</Button>
-                                </Grid>
-                            </Grid>
+                                        <GitHubIcon /> GitHub</Button> */}
+                                {/* </Grid> */}
+                            {/* </Grid> */}
                         </Box>
                     </Box>
                 </>

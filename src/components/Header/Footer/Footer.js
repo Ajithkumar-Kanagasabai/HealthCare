@@ -1,12 +1,12 @@
 import React from 'react';
-import { Avatar, Box, Chip, Container, Divider, Grid, Stack, styled, Typography } from '@mui/material';
+import { Avatar, Box, Chip, colors, Container, Divider, Grid, Stack, styled, Typography } from '@mui/material';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import EmailIcon from '@mui/icons-material/Email';
 import HealingTwoToneIcon from '@mui/icons-material/HealingTwoTone';
 import CallIcon from '@mui/icons-material/Call';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import TwitterIcon from '@mui/icons-material/Twitter';
 import './Footer.css';
 import { pink } from '@mui/material/colors';
 import { HashLink } from 'react-router-hash-link';
@@ -24,9 +24,9 @@ const Root = styled('div')(({ theme }) => ({
 function Copyright(props) {
     return (
         <Typography variant="body2" color="text.secondary" align="center" {...props}>
-            {'Developed with 🖤 by '}
-            <strong><a className='text-style' href="https://github.com/Foy5al" target="_blank" rel="noreferrer noopener">Mohammd Foysal</a> </strong>{'Copyright ©'}
+            {'Copyright ©'}
             {new Date().getFullYear()}
+            <strong><a className='text-style' href="https://github.com/Foy5al" target="_blank" rel="noreferrer noopener"> The London General Practice</a></strong>{', Private GP Clinic London'}
             {'.'}
         </Typography>
     );
@@ -48,24 +48,37 @@ const Footer = () => {
                                     justifyContent="flex-start"
                                     alignItems="center"
                                     sx={{ mr: 2, display: { xs: 'flex', md: 'flex' } }}
-                                > <Avatar sx={{ mt: 1, mb: 1, mr: 1, bgcolor: 'white' }}>
+                                > 
+                                {/* <Avatar sx={{ mt: 1, mb: 1, mr: 1, bgcolor: 'white' }}>
                                         <HealingTwoToneIcon
                                             color='primary'
                                             fontSize='large' />
-                                    </Avatar>
-                                    Health Haven Hospital
+                                    </Avatar> */}
+                                    The London General Practice
                                 </Typography>
                                 <Divider />
                             </Box>
-
+                            <a href='https://www.google.com/maps/place/The+London+General+Practice/@51.5218873,-0.1503944,17z/data=!3m1!4b1!4m6!3m5!1s0x417031500ae8ce23:0xbb8948dac948f2c!8m2!3d51.5218873!4d-0.1478195!16s%2Fg%2F1q6j7ggy7?entry=ttu&g_ep=EgoyMDI0MDkwMi4wIKXMDSoASAFQAw%3D%3D' target='blank' style={{textDecoration: "none"}}>
                             <Stack direction="row"
                                 justifyContent="flex-start"
                                 alignItems="center"
                                 spacing={1} >
                                 <Avatar sx={{ mt: 1, bgcolor: pink[500] }}>
                                     <LocationOnIcon />
-                                </Avatar><span>Tejgaon I/A, Dhaka-1208</span>
+                                </Avatar>
+                                <Typography
+                                sx={{
+                                    color: 'black',
+                                    '&:hover': {
+                                    color: 'pink !important',
+                                    cursor: 'pointer',
+                                    },
+                                }}
+                                >
+                                114a Harley Street London W1G 7JL
+                                </Typography>
                             </Stack >
+                            </a>
 
                             <Stack direction="row"
                                 justifyContent="flex-start"
@@ -74,8 +87,8 @@ const Footer = () => {
                                 <Avatar sx={{ mb: 1, mt: 1, bgcolor: pink[500] }}>
                                     <EmailIcon />
                                 </Avatar>
-                                <a className='text-style' href="mailto:mh.foysal.h@gmail.com">
-                                    mh.foysal.h@gmail.com
+                                <a className='text-style' href="mailto:info@thelondongeneralpractice.com">
+                                info@thelondongeneralpractice.com                               
                                 </a>
                             </Stack >
 
@@ -86,8 +99,8 @@ const Footer = () => {
                                 <Avatar sx={{ mb: 1, bgcolor: pink[500] }}>
                                     <CallIcon />
                                 </Avatar>
-                                <a className='text-style' href="tel:01680xxx86">
-                                    01680xxx86
+                                <a className='text-style' href="tel:+44 (0)207 935 1000">
+                                +44 (0)207 935 1000
                                 </a>
                             </Stack >
 
@@ -127,8 +140,8 @@ const Footer = () => {
                                 <Avatar sx={{ mb: 1, mt: 1, bgcolor: pink[500] }}>
                                     <FacebookIcon />
                                 </Avatar>
-                                <a className='text-style' href="https://www.facebook.com/iamfoysal.h" target="_blank" rel="noopener noreferrer" >
-                                    Foysal on Facebook
+                                <a className='text-style' href="https://www.facebook.com/Londongeneralpractice/" target="_blank" rel="noopener noreferrer" >
+                                    Facebook
                                 </a>
                             </Stack >
 
@@ -137,10 +150,10 @@ const Footer = () => {
                                 alignItems="center"
                                 spacing={1} >
                                 <Avatar sx={{ mb: 1, bgcolor: pink[500] }}>
-                                    <LinkedInIcon />
+                                    <YouTubeIcon />
                                 </Avatar>
-                                <a className='text-style' href="https://www.linkedin.com/in/md-foysal-h/" target="_blank" rel="noopener noreferrer" >
-                                    Foysal on LinkedIn
+                                <a className='text-style' href="https://www.youtube.com/channel/UCXwDGzrTlOMuEd7H-y513Mg/videos" target="_blank" rel="noopener noreferrer" >
+                                    Youtube
                                 </a>
                             </Stack >
 
@@ -149,10 +162,10 @@ const Footer = () => {
                                 alignItems="center"
                                 spacing={1} >
                                 <Avatar sx={{ mb: 1, bgcolor: pink[500] }}>
-                                    <GitHubIcon />
+                                    <TwitterIcon />
                                 </Avatar>
-                                <a className='text-style' href="https://github.com/Foy5al" target="_blank" rel="noopener noreferrer" >
-                                    Foysal on GitHub
+                                <a className='text-style' href="https://x.com/i/flow/login?redirect_after_login=%2Ftlgp_doc" target="_blank" rel="noopener noreferrer" >
+                                    Twitter
                                 </a>
                             </Stack >
 

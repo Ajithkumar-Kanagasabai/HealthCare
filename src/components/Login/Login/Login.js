@@ -7,8 +7,8 @@ import UserProfile from './UserProfile/UserProfile';
 import LoginIcon from '@mui/icons-material/Login';
 import { Link } from 'react-router-dom';
 import { Fingerprint } from '@mui/icons-material';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import GitHubIcon from '@mui/icons-material/GitHub';
+// import FacebookIcon from '@mui/icons-material/Facebook';
+// import GitHubIcon from '@mui/icons-material/GitHub';
 import { useLocation } from 'react-router-dom';
 import { useHistory } from 'react-router-dom';
 
@@ -148,30 +148,30 @@ const Login = () => {
                                     </Grid>
                                 </Grid>
                                 {/* google btn */}
-                                <Grid container sx={{ mt: 2, mb: 3 }} justifyContent="flex-end">
+                                {/* <Grid container sx={{ mt: 2, mb: 3 }} justifyContent="flex-end">
                                     <Grid item>
                                         <GoogleButton className='google-btn'
                                             type="dark" // can be light or dark
                                             onClick={handleGoogleSignIn}
                                         />
                                     </Grid>
-                                </Grid>
+                                </Grid> */}
 
-                                <Grid container sx={{ mb: 3 }} justifyContent="flex-end">
+                                {/* <Grid container sx={{ mb: 3 }} justifyContent="flex-end">
                                     {/* Facebook btn */}
-                                    <Grid item>
+                                    {/* <Grid item>
                                         <Button onClick={handleFacebooksignIn} variant="contained"
                                             sx={{ p: 1, bgcolor: '#4267B2' }}>
                                             <FacebookIcon />Facebook</Button>
                                     </Grid>
                                     <Typography textAlign="center" sx={{ p: 2 }}>Or</Typography>
                                     {/* GitHUB btn */}
-                                    <Grid item>
+                                    {/* <Grid item>
                                         <Button onClick={handleGithubSignIn} variant="contained"
                                             sx={{ p: 1, mb: 2, bgcolor: '#171515' }}>
                                             <GitHubIcon /> GitHub</Button>
-                                    </Grid>
-                                </Grid>
+                                    </Grid> */}
+                                {/* </Grid> */}
                             </Box>
                         </Container>
                     </>

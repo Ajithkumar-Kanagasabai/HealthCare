@@ -1,12 +1,12 @@
 import { AppBar, Avatar, Box, Button, Container, Divider, IconButton, Menu, MenuItem, Toolbar, Tooltip, Typography } from '@mui/material';
 import React from 'react';
-import { Link } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
 import HealingTwoToneIcon from '@mui/icons-material/HealingTwoTone';
 import './NavBar.css'
 import useAuth from '../../../Hooks/useAuth';
 import { useHistory } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
+import Logo from "../../../../src/assets/Health_Logo.gif";
 
 // const pages = ['home', 'services', 'doctors', 'Appointment', 'about', 'login'];
 const settings = ['Profile', 'Logout'];
@@ -51,7 +51,8 @@ const Navbar = () => {
             <AppBar position="fixed" color="primary" sx={{ top: 0, bottom: 'auto' }} >
                 <Container maxWidth="xl">
                     <Toolbar disableGutters>
-                        <Typography
+                    <img src={Logo} alt='logo' style={{ height: '69px', maxWidth: '100%' }} />
+                    {/* <Typography
                             variant="h6"
                             noWrap
                             component="div"
@@ -59,8 +60,8 @@ const Navbar = () => {
                         > <HealingTwoToneIcon
                                 fontSize='large'
                             />
-                            Health Haven Hospital
-                        </Typography>
+                             The London General Practice
+                        </Typography> */}
 
                         <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                             <IconButton
@@ -146,7 +147,7 @@ const Navbar = () => {
                             sx={{ flexGrow: 1, pt: 2, display: { xs: 'flex', md: 'none' } }}
                         >
                             <HealingTwoToneIcon
-                                fontSize='large' />  Health Haven Hospital
+                                fontSize='large' />   The London General Practice
                         </Typography>
                         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
 

@@ -1,7 +1,7 @@
 import { Button, Container, TextField, Typography } from '@mui/material';
 import { Box, width } from '@mui/system';
 import React from 'react';
-import About from '../About/About';
+import AboutHome from '../About/AboutHome';
 import Banner from './Banner/Banner';
 import './Home.css'
 import OurExperts from './OurExperts/OurExperts';
@@ -23,7 +23,7 @@ const Home = () => {
             <Banner></Banner>
             <Whyus></Whyus>
             <Container className='content-container' maxWidth="xl">
-                <About></About>
+                <AboutHome></AboutHome>
             </Container>
             <OurExperts></OurExperts>
             <Box sx={{ p: 5, mb: 2, alignItems: 'center' }}>
